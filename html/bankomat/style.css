@@ -1,0 +1,788 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+body {
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	overflow: hidden;
+	font-family: Montserrat, sans-serif
+}
+
+.bankomat .kontent .historija .header p,
+.bankomat .kontent .historija .transakcije .item .lista p,
+.bankomat .kontent .menu .header p,
+.bankomat .kontent .stanje .ime p,
+.bankomat .kontent .stanje .ime span,
+.bankomat-menu .kontakt h1,
+.kes p,
+.kes span,
+.racun p,
+.racun span {
+	font-family: Karla, sans-serif
+}
+
+.bankomat-menu {
+	background: #1a1a1a;
+	width: 230px;
+	height: 720px;
+	border-radius: 10px 0 0 10px
+}
+
+.bankomat-menu img {
+	width: 200px;
+	margin-left: 15px;
+	margin-top: 20px
+}
+
+z {
+	color: #2ade45
+}
+
+c {
+	color: #e33030
+}
+
+o {
+	color: #de932a
+}
+
+.bankomat-menu .kontakt .instagram {
+	margin-top: 10px;
+	display: flex;
+	padding-left: 20px
+}
+
+.bankomat-menu .kontakt .instagram i {
+	color: #fff;
+	margin-right: 5px;
+	padding-top: 2px
+}
+
+.bankomat-menu .kontakt .instagram p {
+	color: #fff;
+	margin: 0;
+	opacity: .7
+}
+
+.bankomat-menu .kontakt .discord {
+	margin-top: 10px;
+	display: flex;
+	padding-left: 20px
+}
+
+.bankomat-menu .kontakt .discord i {
+	color: #fff;
+	margin-right: 5px;
+	padding-top: 2px
+}
+
+.bankomat-menu .kontakt .discord p {
+	color: #fff;
+	margin: 0;
+	opacity: .7
+}
+
+.bankomat-menu .kontakt h1 {
+	margin: 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 2px
+}
+
+.bankomat-menu .kontakt {
+	width: 100%;
+	height: 450px
+}
+
+.bankomat-menu hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(229, 93, 14, 1), rgba(255, 255, 255, 0))
+}
+
+.bankomat {
+	background: #0e0e0e;
+	height: 720px;
+	width: 1120px;
+	border-radius: 0 10px 10px 0
+}
+
+.bankomat .kontent {
+	width: 1280px;
+	height: 720px
+}
+
+.bankomat .kontent .stanje {
+	width: 1120px;
+	height: 180px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center
+}
+
+.bankomat .kontent .stanje .ime .icon,
+.kes .icon,
+.racun .icon {
+	margin-top: -75px;
+	height: 100px
+}
+
+.bankomat .kontent .stanje .ime .icon i,
+.kes .icon i,
+.racun .icon i {
+	color: #262626;
+	float: right;
+	font-size: 50px;
+	margin-top: 23px;
+	margin-right: 20px
+}
+
+.bankomat .kontent .stanje .ime:hover,
+.kes:hover,
+.racun:hover {
+	color: red
+}
+
+.bankomat .kontent .stanje .ime {
+	width: 510px;
+	height: 100px;
+	border-radius: 10px;
+	background: #1a1a1a;
+	margin-top: 30px;
+	transition: .1s
+}
+
+.bankomat .kontent .stanje .ime p,
+.kes p,
+.racun p {
+	padding-left: 20px;
+	color: #ff6610;
+	font-size: 14px;
+	margin: 27px 0 -5px
+}
+
+.bankomat .kontent .stanje .ime span,
+.kes span,
+.racun span {
+	color: #fff;
+	margin-left: 20px;
+	font-size: 30px
+}
+
+.bankomat .kontent .historija,
+.bankomat .kontent .stanje .kes,
+.bankomat .kontent .stanje .racun {
+	margin-left: 25px;
+	border-radius: 10px;
+	transition: .1s
+}
+
+.bankomat .kontent .stanje .racun {
+	width: 340px;
+	height: 100px;
+	background: #1a1a1a;
+	margin-top: 30px
+}
+
+.bankomat .kontent .stanje .kes {
+	width: 510px;
+	height: 100px;
+	background: #1a1a1a;
+	margin-top: 30px
+}
+
+.bankomat .kontent .historija {
+	margin-top: 25px;
+	width: 615px;
+	height: 420px
+}
+
+.bankomat .kontent .historija .header {
+	border-radius: 8px 8px 0 0;
+	height: 53px;
+	width: 100%;
+	background: #222222;
+	display: flex;
+	box-shadow: 0 -1px 0 0 #343434 inset
+}
+
+.bankomat .kontent .historija .transakcije {
+	height: 87.5%;
+	width: 100%;
+	background: url(media/img/transakcije.png);
+	overflow-y: auto;
+	border-radius: 0 0 8px 8px;
+	overflow-x: hidden;
+	justify-content: center;
+	display: flex;
+	transition: .1s
+}
+
+.bankomat .kontent .historija .header i {
+	color: #262626;
+	margin-left: 430px;
+	margin-top: 7px;
+	font-size: 40px
+}
+
+.bankomat .kontent .historija .header p {
+	margin: 0;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	padding-top: 15px
+}
+
+.bankomat .kontent .historija .transakcije .item .lista .datum {
+	text-align: right;
+	width: 100%;
+	margin-top: -20px
+}
+
+.bankomat .kontent .historija .transakcije .item .lista .datum p {
+	margin: 0;
+	padding-right: 5px;
+	color: #fff
+}
+
+.bankomat .kontent .historija .transakcije .item .lista {
+	height: 60px;
+	width: 600px;
+	background: #222222;
+	margin-top: 10px;
+	transition: .1s;
+	border-radius: 5px
+}
+
+.bankomat .kontent .historija .transakcije .item .lista p {
+	color: #ff6610;
+	margin: 0 0 -3px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-left: 20px
+}
+
+.bankomat .kontent .historija .transakcije .item .lista span {
+	color: #fff;
+	padding-top: 10px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	font-family: Karla, sans-serif;
+	font-size: 16px
+}
+
+.bankomat .kontent .historija .transakcije .item .lista:hover {
+	background: #262626;
+	cursor: pointer
+}
+
+::-webkit-scrollbar {
+	width: 5px
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #1a1a1a
+}
+
+::-webkit-scrollbar-thumb {
+	background: #a6430a;
+	border-radius: 10px
+}
+
+.bankomat .kontent .flex {
+	display: flex
+}
+
+.bankomat .kontent .menu {
+	background: url(media/img/bnkmt.png);
+	height: 420px;
+	width: 435px;
+	margin: 25px 22px;
+	border-radius: 10px;
+	transition: .1s
+}
+
+.bankomat .kontent .menu .header {
+	height: 53px;
+	width: 100%;
+	background: #222222;
+	display: flex;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 -1px 0 0 #343434 inset
+}
+
+.bankomat .kontent .menu .header i {
+	color: #262626;
+	margin-left: 270px;
+	margin-top: 6px;
+	font-size: 40px
+}
+
+.bankomat .kontent .menu .header p {
+	margin: 0;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	padding-top: 15px
+}
+
+.bankomat .kontent .menu .podigni p,
+.bankomat .kontent .menu .posalji p,
+.bankomat .kontent .menu .prebaci p {
+	margin: 0 0 -50px;
+	font-size: 18px
+}
+
+.bankomat .kontent .menu .podigni .test i,
+.bankomat .kontent .menu .posalji .test i,
+.bankomat .kontent .menu .prebaci .test i {
+	font-size: 30px;
+	padding-top: 30px;
+	color: #e55d0e
+}
+
+.bankomat .kontent .menu .prebaci .test {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	margin: 0;
+	height: 100%;
+	width: 20%
+}
+
+.bankomat .kontent .menu .podigni .test {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	margin: 0;
+	height: 100%;
+	width: 20%
+}
+
+.podigni-prikaz .podigni-2 .header p,
+.posalji-prikaz .posalji-2 .header p,
+.prebaci-prikaz .prebaci-2 .header p {
+	padding-top: 12px;
+	font-family: Karla, sans-serif;
+	text-transform: uppercase
+}
+
+.bankomat .kontent .menu .posalji .test {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	margin: 0;
+	height: 100%;
+	width: 20%
+}
+
+.bankomat .kontent .menu .prebaci {
+	height: 50px;
+	width: 100%;
+	margin-top: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.bankomat .kontent .menu .prebaci button,
+.podigni button,
+.posalji button {
+	height: 50px;
+	width: 350px;
+	background: #222222;
+	cursor: pointer;
+	border: 0;
+	transition: .1s;
+	color: #fff;
+	font-family: Karla, sans-serif;
+	text-transform: uppercase;
+	border-radius: 10px;
+	font-size: 18px;
+	transition: 0.2s;
+}
+
+.bankomat .kontent .menu .podigni button:hover,
+.bankomat .kontent .menu .posalji button:hover,
+.bankomat .kontent .menu .prebaci button:hover {
+	background: #e55d0e;
+	box-shadow: 0 0 2px #e55d0e
+}
+
+.bankomat .kontent .menu .podigni,
+.bankomat .kontent .menu .posalji {
+	height: 50px;
+	width: 100%;
+	margin-top: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.prebaci-prikaz {
+	height: 720px;
+	width: 1120px;
+	margin-left: 230px;
+	background: rgb(0, 0, 0, .6);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.prebaci-prikaz .prebaci-2 {
+	width: 600px;
+	height: 210px;
+	background: #1a1a1a;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgb(0, 0, 0, .3)
+}
+
+.prebaci-prikaz .prebaci-2 .header {
+	height: 50px;
+	background: #222222;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	justify-content: center
+}
+
+.prebaci-prikaz .prebaci-2 .header p {
+	margin: 0;
+	color: #fff;
+	font-size: 20px
+}
+
+.prebaci-prikaz .prebaci-2 .input {
+	margin-top: 20px;
+	height: 80px;
+	width: 100%;
+	text-align: center
+}
+
+.prebaci-prikaz .prebaci-2 .input input {
+	background: #212121;
+	border-radius: 10px;
+	outline: 0;
+	border: 0;
+	height: 50px;
+	color: #ff6610;
+	font-size: 30px;
+	padding-left: 10px;
+	width: 90%
+}
+
+.prebaci-prikaz .prebaci-2 .dugmici {
+	display: flex;
+	justify-content: center;
+	height: 40%;
+	width: 100%;
+	margin-left: 5px
+}
+
+.da,
+.izlaz {
+	background: #b3480b;
+	height: 40px;
+	border: 0;
+	width: 45%;
+	margin-right: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #fff;
+	transition: .1s;
+	text-transform: uppercase;
+	font-size: 13px
+}
+
+.da:hover {
+	background: #1e7539
+}
+
+.izlaz:hover {
+	background: #751e1e
+}
+
+.flex {
+	display: flex
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+
+.podigni-prikaz {
+	height: 720px;
+	width: 1120px;
+	margin-left: 230px;
+	background: rgb(0, 0, 0, .6);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.podigni-prikaz .podigni-2 {
+	width: 600px;
+	height: 210px;
+	background: #1a1a1a;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgb(0, 0, 0, .3)
+}
+
+.podigni-prikaz .podigni-2 .header {
+	height: 50px;
+	background: #222222;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	justify-content: center
+}
+
+.podigni-prikaz .podigni-2 .header p {
+	margin: 0;
+	color: #fff;
+	font-size: 20px
+}
+
+.podigni-prikaz .podigni-2 .input {
+	margin-top: 20px;
+	height: 80px;
+	width: 100%;
+	text-align: center
+}
+
+.podigni-prikaz .podigni-2 .input input {
+	background: #212121;
+	border-radius: 10px;
+	outline: 0;
+	border: 0;
+	height: 50px;
+	color: #fff;
+	font-size: 30px;
+	padding-left: 10px;
+	width: 90%
+}
+
+.podigni-prikaz .podigni-2 .dugmici {
+	display: flex;
+	justify-content: center;
+	height: 40%;
+	width: 100%;
+	margin-left: 5px
+}
+
+.posalji-prikaz {
+	height: 720px;
+	width: 1120px;
+	margin-left: 230px;
+	background: rgb(0, 0, 0, .6);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.posalji-prikaz .posalji-2 {
+	width: 600px;
+	height: 210px;
+	background: #1a1a1a;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgb(0, 0, 0, .3)
+}
+
+.posalji-prikaz .posalji-2 .header {
+	height: 50px;
+	background: #222222;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	justify-content: center
+}
+
+.posalji-prikaz .posalji-2 .header p {
+	margin: 0;
+	color: #fff;
+	font-size: 20px
+}
+
+.posalji-prikaz .posalji-2 .input {
+	margin-top: 20px;
+	height: 80px;
+	width: 100%;
+	text-align: center
+}
+
+.posalji-prikaz .posalji-2 .input input::placeholder {
+	color: #333333;
+	font-family: Karla, sans-serif;
+	text-transform: uppercase
+}
+
+.podigni-prikaz .podigni-2 .input input::placeholder {
+	color: #333333;
+	font-family: Karla, sans-serif;
+	text-transform: uppercase
+}
+
+.prebaci-prikaz .prebaci-2 .input input::placeholder {
+	color: #333333;
+	font-family: Karla, sans-serif;
+	text-transform: uppercase
+}
+
+.posalji-prikaz .posalji-2 .input i {
+	color: #fff
+}
+
+.posalji-prikaz .posalji-2 .input input {
+	background: #262626;
+	border-radius: 10px;
+	outline: 0;
+	border: 0;
+	height: 50px;
+	color: #fff;
+	font-size: 30px;
+	padding-left: 10px;
+	width: 43%
+}
+
+.posalji-prikaz .posalji-2 .dugmici {
+	display: flex;
+	justify-content: center;
+	height: 40%;
+	width: 100%;
+	margin-left: 5px
+}
+
+.wlcm-prikaz {
+	height: 720px;
+	width: 1350px;
+	background: #0e0e0e;
+	position: absolute;
+	border-radius: 10px
+}
+
+.wlcm-prikaz .header {
+	background: #222222;
+	height: 80px;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.wlcm-prikaz .lockscreen,
+.wlcm-prikaz .lockscreen .slika {
+	margin-top: 20px;
+	height: 300px;
+	width: 100%
+}
+
+.wlcm-prikaz .header p {
+	font-size: 35px;
+	color: #fff
+}
+
+.wlcm-prikaz .lockscreen .slika {
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.wlcm-prikaz .lockscreen .slika img {
+	width: 100%;
+	margin-top: 400px;
+	margin-left: -25px
+}
+
+.wlcm-prikaz .lockscreen .dugme {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin-top: -70px
+}
+
+.wlcm-prikaz .lockscreen .dugme i {
+	margin-top: -10px;
+	font-size: 120px;
+	color: #a6430a;
+	transition: .1s;
+	cursor: pointer
+}
+
+.WLCMOPIS,
+.wlcm-prikaz .lockscreen .dugme i:hover {
+	color: #fff
+}
+
+.wlcm-prikaz .lockscreen .dugme button {
+	margin-top: 100px;
+	width: 300px;
+	height: 200px;
+	background-color: #1a1a1a;
+	border-radius: 0 0 10px 10px;
+	border: 0;
+	color: #fff
+}
+
+@keyframes otvori {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 100%
+	}
+}
+
+@keyframes zatvori {
+	0% {
+		opacity: 100%
+	}
+	100% {
+		opacity: 0
+	}
+}
+
+@keyframes wlcm {
+	100% {
+		margin-top: -100px;
+		opacity: 0;
+		transform: scale(70%)
+	}
+}
+
+.WLCMOPIS {
+	text-align: center;
+	margin: -30px 0 -100px 525px;
+	font-family: Karla, sans-serif;
+	font-size: 18px;
+	background: #222222;
+	width: 300px;
+	height: 35px;
+	padding-top: 10px;
+	border-radius: 10px 10px 0 0;
+	text-transform: uppercase;
+	box-shadow: 0 -1px 0 0 #1a1a1a inset
+}
+
+@media screen and (max-width:1280px) {
+	body {
+		transform: scale(80%)
+	}
+}
+
+/* discord.gg/revolucija */

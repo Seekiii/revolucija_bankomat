@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RevolucijaBankomatV2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+<body id="body" style="display: none;">
+
+
+	<div class="bankomat-menu">
+		<img src="media/img/logo.png">
+		<hr>
+		<div class="kontakt">
+			<h1>Kontakt</h1>
+			<div class="discord">
+				<i class="fab fa-discord"></i><p> - discord.gg/revolucija</p>
+			</div>
+	
+			<div class="instagram">
+				<i class="fab fa-instagram"></i><p> - revolucijaroleplay</p>
+			</div>
+		</div>
+	</div>
+	<div class="bankomat">
+		<div class="kontent">
+			<div class="stanje">
+				<div class="ime"> <!-- IME -->
+					<p>IME:</p>
+					<span id="ime">Loading...</span>
+					<div class="icon">
+						<i class="fa fa-user-o"></i>
+					</div>
+				</div>
+				<div class="kes">
+					<p>NOVAC:</p>
+					<span id="kes">Loading...</span>
+					<div class="icon">
+						<i class="fa fa-money"></i>
+					</div>
+				</div>
+			</div>
+	
+			<div class="flex">
+				<div class="historija">
+					<div class="header">
+						<p>Transakcije</p>
+						<i class="fa fa-line-chart"></i>
+					</div>
+					<div class="transakcije"> 
+						<div class="item" id="transakcijelista">  
+						</div>
+					</div>
+				</div>
+	
+				<div class="menu">
+					<div class="header">
+						<p>BANKOMAT</p>
+						<i class="fa fa-university"></i>
+					</div>
+					<div class="prebaci" onclick="otvorijs('prebaci')"><button><p>Prebaci na banku</p><div class="test"><i class="fa fa-arrow-up"></i></div></button></div>
+					<div class="podigni" onclick="otvorijs('podigni')"><button><p>Podigni sa banke</p><div class="test"><i class="fa fa-arrow-down"></i></div></button></div>
+					<div class="posalji" onclick="otvorijs('posalji')"><button><p>Posalji nekom</p><div class="test"><i class="fa fa-exchange"></i></div></button></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+<div class="prebaci-prikaz" id="prebaci" style="display: none">
+	<div class="prebaci-2">
+		<div class="header">
+			<p>Koliko novca zelite prebaciti?</p>
+		</div>
+		<div class="input">
+			<input id="prebaci-amount" type="number" placeholder="100">
+		</div>
+		<div class="dugmici">
+			<button class="da" onclick='prebacidugme()'>Prebaci</button>
+			<button class="izlaz" onclick="izlazjs('prebaci')">Izlaz</button> <!--#-->
+		</div>
+	</div>
+</div>
+<div class="podigni-prikaz" id="podigni" style="display: none">
+	<div class="podigni-2">
+		<div class="header">
+			<p>Koliko novca želite podići?</p>
+		</div>
+		<div class="input">
+			<input id="podigni-amount" type="number" placeholder="100">
+		</div>
+		<div class="dugmici">
+				<button class="da" onclick='podignidugme()'>Podigni</button>
+				<button class="izlaz" onclick="izlazjs('podigni')">Izlaz</button> <!--#-->
+		</div>
+	</div>
+</div>
+<div class="posalji-prikaz" id="posalji" style="display: none">
+	<div class="posalji-2">
+		<div class="header">
+			<p>Koliko i kome želite poslati novac?</p>
+		</div>
+		<div class="input">
+				<input id="posalji-amount" type="number" placeholder="100">
+				<input id="posalji-id"style="margin-left:5px;" type="number" placeholder="ID">
+		</div>
+		<div class="dugmici">
+				<button class="da" onclick='posaljidugme()'>Posalji</button>
+				<button class="izlaz" onclick="izlazjs('posalji')">Izlaz</button> <!--#-->
+		</div>
+	</div>
+</div>
+
+
+
+<!--########################## WELCOME SCREEN ##############################-->
+<div class="wlcm-prikaz" id="wlcm">
+	
+	<div class="lockscreen">
+		<div class="slika">
+			<img src="media/img/logo2.png">
+		</div>
+		<p class="WLCMOPIS">UBACITE KARTICU</p>
+		<div class="dugme">
+			<button><i id="wlcmdugme" onclick="wlcm_dugme()" class="fa fa-credit-card"></i></button> <!--#-->
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
